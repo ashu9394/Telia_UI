@@ -6,19 +6,30 @@ import {SignedDataService} from './signed-data.service'
 import { AppComponent } from './app.component';
 import { TeliaHeaderComponent } from './components/telia-header/telia-header.component';
 import { SignedDataTableComponent } from './components/signed-data-table/signed-data-table.component';
+import {MatDialogModule} from "@angular/material";
+import { EditDialogComponent } from './components/edit-dialog/edit-dialog.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule, MatCheckboxModule} from '@angular/material';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     TeliaHeaderComponent,
-    SignedDataTableComponent
+    SignedDataTableComponent,
+    EditDialogComponent
   ],
   imports: [
     BrowserModule,
     HttpModule,
-    DataTableModule
+    DataTableModule,
+    MatDialogModule,
+    BrowserAnimationsModule,
+    MatButtonModule, 
+    MatCheckboxModule
   ],
   providers: [SignedDataService],
+  entryComponents : [EditDialogComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
