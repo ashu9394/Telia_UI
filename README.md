@@ -2,6 +2,19 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.
 
+## Install Angular CLI
+
+Firstly install Angular-cli with command `npm install -g @angular/cli`
+
+## Clone this project
+
+`git clone https://github.com/ashu9394/Telia_UI.git`
+
+## For setting up dummy Node back end please refer to the following repo
+
+`https://github.com/ashu9394/Dummy-Data` clone this project and run command `node dummyData.js` the back end will be running on port 8000 and the api will be `http://localhost:8000/data`
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
