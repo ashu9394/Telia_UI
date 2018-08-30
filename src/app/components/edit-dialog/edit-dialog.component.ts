@@ -13,14 +13,22 @@ export class EditDialogComponent implements OnInit {
   form: FormGroup;
   description:string;
 
+  public selectedRowData : {}
+  
   constructor(
       private dialogRef: MatDialogRef<EditDialogComponent>,
       @Inject(MAT_DIALOG_DATA) public data: any) {
-  }
+        this.selectedRowData = data
+      }
 
   ngOnInit() {
   }
 
+  public update(){
+    console.log(this.selectedRowData)
+    this.dialogRef.close()
+  }
+  
   public close(){
       this.dialogRef.close()
   }

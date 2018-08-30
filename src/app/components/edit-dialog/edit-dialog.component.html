@@ -1,6 +1,12 @@
-
-<p>{{data.name}}</p>
-
-<div>
-    <button class="mat-raised-button"(click)="close()">Close</button>
+<div class="example-container">
+    <mat-form-field>
+        <input matInput [(ngModel)]="selectedRowData.id">
+    </mat-form-field>
+    <mat-form-field>
+        <input matInput [(ngModel)]="selectedRowData.name">
+    </mat-form-field>
+    <div mat-dialog-action>
+            <button class="mat-raised-button"(click)="update()">Update</button>
+            <button class="mat-raised-button"(click)="close()">Close</button>
+    </div>
 </div>

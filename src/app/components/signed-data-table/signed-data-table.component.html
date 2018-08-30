@@ -11,7 +11,9 @@
   </thead>
   <tbody>
   <tr *ngFor="let item of mf.data">
-      <td>{{item.id}}</td>
+      <a mat-button (click)="editSignedData(item)">
+          <td>{{item.id}}</td>
+      </a>
       <td>{{item.name}}</td>
   </tr>
   </tbody>
